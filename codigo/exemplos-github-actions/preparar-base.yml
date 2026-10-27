@@ -1,0 +1,37 @@
+name: Preparar base
+# Rode alguns dias antes do 2º turno (os dados abertos do 1º turno já precisam estar publicados).
+on:
+  # também roda quando o arquivo pedidos/preparar-base.txt muda (uma linha: caminho da configuração)
+  push:
+    paths: ["pedidos/preparar-base.txt"]
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "Arquivo de configuração (pasta eleicoes/)"
+        default: "eleicoes/presidente-2026.json"
+        required: true
+permissions:
+  contents: write
+jobs:
+  base:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install numpy pandas scipy
+      - name: Montar base
+        run: |
+          CFG="${{ inputs.config }}"; [ -z "$CFG" ] && CFG=$(head -1 pedidos/preparar-base.txt)
+          mkdir -p logs
+          set -o pipefail
+          python -u scripts/preparar_base.py "$CFG" 2>&1 | tee logs/base.txt
+      - name: Salvar base
+        if: always()
+        run: |
+          git config user.name "projecao-bot"
+          git config user.email "projecao-bot@users.noreply.github.com"
+          git add base logs
+          git commit -m "Base: ${{ inputs.config }}" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main

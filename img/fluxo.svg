@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="300" fill="#fcfcfb"/>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52514e"/>
+    </marker>
+  </defs>
+  <g font-size="15" fill="#0b0b0b">
+    <!-- caixas -->
+    <rect x="20" y="70" width="170" height="120" rx="10" fill="#fff" stroke="#c9c8c2" stroke-width="1.5"/>
+    <text x="105" y="102" text-anchor="middle" font-weight="700">TSE</text>
+    <text x="105" y="128" text-anchor="middle" font-size="13" fill="#52514e">arquivos públicos</text>
+    <text x="105" y="146" text-anchor="middle" font-size="13" fill="#52514e">da divulgação:</text>
+    <text x="105" y="164" text-anchor="middle" font-size="13" fill="#52514e">município, UF, seções</text>
+
+    <rect x="250" y="70" width="190" height="120" rx="10" fill="#eef4fc" stroke="#2a78d6" stroke-width="1.5"/>
+    <text x="345" y="102" text-anchor="middle" font-weight="700">Robô</text>
+    <text x="345" y="128" text-anchor="middle" font-size="13" fill="#52514e">GitHub Actions</text>
+    <text x="345" y="146" text-anchor="middle" font-size="13" fill="#52514e">lê o TSE a cada minuto,</text>
+    <text x="345" y="164" text-anchor="middle" font-size="13" fill="#52514e">respeitando o limite</text>
+
+    <rect x="500" y="70" width="190" height="120" rx="10" fill="#eef4fc" stroke="#2a78d6" stroke-width="1.5"/>
+    <text x="595" y="102" text-anchor="middle" font-weight="700">Modelo v2</text>
+    <text x="595" y="128" text-anchor="middle" font-size="13" fill="#52514e">projeção do final,</text>
+    <text x="595" y="146" text-anchor="middle" font-size="13" fill="#52514e">faixa de 90% e</text>
+    <text x="595" y="164" text-anchor="middle" font-size="13" fill="#52514e">chance de vitória</text>
+
+    <rect x="750" y="70" width="190" height="120" rx="10" fill="#fff" stroke="#c9c8c2" stroke-width="1.5"/>
+    <text x="845" y="102" text-anchor="middle" font-weight="700">Página</text>
+    <text x="845" y="128" text-anchor="middle" font-size="13" fill="#52514e">GitHub Pages</text>
+    <text x="845" y="146" text-anchor="middle" font-size="13" fill="#52514e">atualiza sozinha</text>
+    <text x="845" y="164" text-anchor="middle" font-size="13" fill="#52514e">no celular e no PC</text>
+  </g>
+  <g stroke="#52514e" stroke-width="2" fill="none">
+    <path d="M190 130 H246" marker-end="url(#seta)"/>
+    <path d="M440 130 H496" marker-end="url(#seta)"/>
+    <path d="M690 130 H746" marker-end="url(#seta)"/>
+  </g>
+  <g font-size="12" fill="#52514e" text-anchor="middle">
+    <text x="595" y="226">grava projecao.json no ramo "dados"</text>
+    <text x="345" y="226">se a execução chega a ~6 h, liga a próxima</text>
+    <text x="105" y="226">base do 1º turno, seção a seção</text>
+  </g>
+  <text x="20" y="40" font-size="18" font-weight="700" fill="#0b0b0b">Como a projeção chega até a tela</text>
+  <text x="20" y="280" font-size="12" fill="#8a8985">Tudo roda de graça no GitHub. Nada fica no computador de ninguém.</text>
+</svg>

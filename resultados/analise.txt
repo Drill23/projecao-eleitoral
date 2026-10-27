@@ -1,0 +1,82 @@
+1675 pontos, 55 eleições (49 de 2010-2022)
+presidente {'v2': 0.216, 'v2_semN': 0.166, 'v2_semtau': 0.214, 'v2_base': 0.165} -> v2_base
+governador {'v2': 0.662, 'v2_semN': 0.665, 'v2_semtau': 0.66, 'v2_base': 0.663} -> v2_semtau
+calibração geral: {'alfa': 0.1096, 'beta': -0.8128, 'gama': 0.2505, 'b': 0.0021, 'c': 0.0, 'd': 0.0003}
+
+== todas (55 eleições) cravadas v1 {'n': 165, 'cravou': 165, 'mediana_cp': 1.0, 'erradas': 0} v2 {'n': 165, 'cravou': 165, 'mediana_cp': 1.0, 'erradas': 0}
+  0.5%  bruto 4.37 | v1 erro 1.59 cob 0.93 brier 0.029 | v2 erro 1.52 cob 0.92 brier 0.025 (n=118)
+    1%  bruto 4.21 | v1 erro 1.52 cob 0.92 brier 0.023 | v2 erro 1.51 cob 0.87 brier 0.014 (n=132)
+    2%  bruto 3.94 | v1 erro 1.09 cob 0.92 brier 0.026 | v2 erro 1.01 cob 0.92 brier 0.018 (n=144)
+    3%  bruto 3.69 | v1 erro 0.91 cob 0.96 brier 0.019 | v2 erro 0.84 cob 0.90 brier 0.010 (n=144)
+    5%  bruto 3.19 | v1 erro 0.69 cob 0.99 brier 0.015 | v2 erro 0.74 cob 0.92 brier 0.006 (n=147)
+   10%  bruto 2.62 | v1 erro 0.33 cob 1.00 brier 0.011 | v2 erro 0.30 cob 0.90 brier 0.003 (n=165)
+   20%  bruto 2.13 | v1 erro 0.27 cob 0.99 brier 0.009 | v2 erro 0.25 cob 0.90 brier 0.002 (n=165)
+   30%  bruto 1.81 | v1 erro 0.20 cob 0.99 brier 0.006 | v2 erro 0.17 cob 0.91 brier 0.001 (n=165)
+   50%  bruto 1.27 | v1 erro 0.13 cob 0.99 brier 0.002 | v2 erro 0.12 cob 0.90 brier 0.000 (n=165)
+   70%  bruto 0.79 | v1 erro 0.08 cob 0.98 brier 0.001 | v2 erro 0.07 cob 0.92 brier 0.000 (n=165)
+   90%  bruto 0.30 | v1 erro 0.03 cob 0.98 brier 0.000 | v2 erro 0.03 cob 0.85 brier 0.000 (n=165)
+
+== historico_2010_2022 (49 eleições) cravadas v1 {'n': 147, 'cravou': 147, 'mediana_cp': 1.0, 'erradas': 0} v2 {'n': 147, 'cravou': 147, 'mediana_cp': 1.0, 'erradas': 0}
+  0.5%  bruto 4.50 | v1 erro 1.62 cob 0.92 brier 0.029 | v2 erro 1.52 cob 0.91 brier 0.026 (n=102)
+    1%  bruto 4.45 | v1 erro 1.54 cob 0.91 brier 0.023 | v2 erro 1.53 cob 0.86 brier 0.014 (n=114)
+    2%  bruto 4.14 | v1 erro 1.15 cob 0.92 brier 0.024 | v2 erro 1.05 cob 0.90 brier 0.018 (n=126)
+    3%  bruto 3.87 | v1 erro 0.97 cob 0.97 brier 0.018 | v2 erro 0.88 cob 0.89 brier 0.010 (n=126)
+    5%  bruto 3.31 | v1 erro 0.74 cob 1.00 brier 0.015 | v2 erro 0.78 cob 0.91 brier 0.007 (n=129)
+   10%  bruto 2.70 | v1 erro 0.33 cob 1.00 brier 0.009 | v2 erro 0.31 cob 0.89 brier 0.003 (n=147)
+   20%  bruto 2.13 | v1 erro 0.26 cob 0.99 brier 0.007 | v2 erro 0.25 cob 0.88 brier 0.002 (n=147)
+   30%  bruto 1.76 | v1 erro 0.19 cob 0.99 brier 0.005 | v2 erro 0.18 cob 0.90 brier 0.001 (n=147)
+   50%  bruto 1.21 | v1 erro 0.13 cob 0.99 brier 0.002 | v2 erro 0.12 cob 0.90 brier 0.000 (n=147)
+   70%  bruto 0.75 | v1 erro 0.08 cob 0.98 brier 0.001 | v2 erro 0.07 cob 0.91 brier 0.000 (n=147)
+   90%  bruto 0.29 | v1 erro 0.03 cob 0.98 brier 0.000 | v2 erro 0.03 cob 0.86 brier 0.000 (n=147)
+
+== teste_2026 (6 eleições) cravadas v1 {'n': 18, 'cravou': 18, 'mediana_cp': 1.0, 'erradas': 0} v2 {'n': 18, 'cravou': 18, 'mediana_cp': 0.75, 'erradas': 0}
+  0.5%  bruto 3.53 | v1 erro 1.43 cob 1.00 brier 0.030 | v2 erro 1.50 cob 1.00 brier 0.018 (n=16)
+    1%  bruto 2.66 | v1 erro 1.41 cob 0.94 brier 0.025 | v2 erro 1.40 cob 0.94 brier 0.015 (n=18)
+    2%  bruto 2.49 | v1 erro 0.70 cob 0.89 brier 0.034 | v2 erro 0.71 cob 1.00 brier 0.022 (n=18)
+    3%  bruto 2.44 | v1 erro 0.51 cob 0.89 brier 0.019 | v2 erro 0.60 cob 1.00 brier 0.008 (n=18)
+    5%  bruto 2.32 | v1 erro 0.33 cob 0.89 brier 0.015 | v2 erro 0.42 cob 1.00 brier 0.002 (n=18)
+   10%  bruto 2.02 | v1 erro 0.31 cob 1.00 brier 0.022 | v2 erro 0.26 cob 1.00 brier 0.005 (n=18)
+   20%  bruto 2.13 | v1 erro 0.35 cob 1.00 brier 0.021 | v2 erro 0.26 cob 1.00 brier 0.002 (n=18)
+   30%  bruto 2.20 | v1 erro 0.23 cob 1.00 brier 0.013 | v2 erro 0.13 cob 1.00 brier 0.000 (n=18)
+   50%  bruto 1.77 | v1 erro 0.14 cob 1.00 brier 0.006 | v2 erro 0.09 cob 0.94 brier 0.000 (n=18)
+   70%  bruto 1.12 | v1 erro 0.08 cob 1.00 brier 0.001 | v2 erro 0.06 cob 0.94 brier 0.000 (n=18)
+   90%  bruto 0.35 | v1 erro 0.03 cob 0.94 brier 0.000 | v2 erro 0.03 cob 0.83 brier 0.000 (n=18)
+
+== presidente (5 eleições) cravadas v1 {'n': 15, 'cravou': 15, 'mediana_cp': 0.5, 'erradas': 0} v2 {'n': 15, 'cravou': 15, 'mediana_cp': 0.5, 'erradas': 0}
+  0.5%  bruto 4.55 | v1 erro 0.45 cob 0.93 brier 0.000 | v2 erro 0.45 cob 0.80 brier 0.000 (n=15)
+    1%  bruto 4.17 | v1 erro 0.52 cob 0.73 brier 0.000 | v2 erro 0.52 cob 0.80 brier 0.000 (n=15)
+    2%  bruto 4.45 | v1 erro 0.29 cob 0.67 brier 0.000 | v2 erro 0.29 cob 0.80 brier 0.000 (n=15)
+    3%  bruto 4.47 | v1 erro 0.18 cob 0.87 brier 0.000 | v2 erro 0.18 cob 0.93 brier 0.000 (n=15)
+    5%  bruto 4.34 | v1 erro 0.10 cob 0.87 brier 0.000 | v2 erro 0.10 cob 1.00 brier 0.000 (n=15)
+   10%  bruto 3.88 | v1 erro 0.07 cob 1.00 brier 0.000 | v2 erro 0.07 cob 1.00 brier 0.000 (n=15)
+   20%  bruto 3.43 | v1 erro 0.07 cob 1.00 brier 0.000 | v2 erro 0.07 cob 1.00 brier 0.000 (n=15)
+   30%  bruto 3.20 | v1 erro 0.04 cob 1.00 brier 0.000 | v2 erro 0.04 cob 1.00 brier 0.000 (n=15)
+   50%  bruto 2.69 | v1 erro 0.02 cob 1.00 brier 0.000 | v2 erro 0.02 cob 1.00 brier 0.000 (n=15)
+   70%  bruto 2.01 | v1 erro 0.01 cob 1.00 brier 0.000 | v2 erro 0.01 cob 1.00 brier 0.000 (n=15)
+   90%  bruto 0.85 | v1 erro 0.00 cob 1.00 brier 0.000 | v2 erro 0.00 cob 1.00 brier 0.000 (n=15)
+
+== governador (50 eleições) cravadas v1 {'n': 150, 'cravou': 150, 'mediana_cp': 1.0, 'erradas': 0} v2 {'n': 150, 'cravou': 150, 'mediana_cp': 1.0, 'erradas': 0}
+  0.5%  bruto 4.34 | v1 erro 1.76 cob 0.93 brier 0.033 | v2 erro 1.68 cob 0.94 brier 0.029 (n=103)
+    1%  bruto 4.21 | v1 erro 1.65 cob 0.94 brier 0.026 | v2 erro 1.64 cob 0.88 brier 0.016 (n=117)
+    2%  bruto 3.88 | v1 erro 1.18 cob 0.95 brier 0.029 | v2 erro 1.09 cob 0.93 brier 0.020 (n=129)
+    3%  bruto 3.60 | v1 erro 0.99 cob 0.97 brier 0.021 | v2 erro 0.92 cob 0.90 brier 0.011 (n=129)
+    5%  bruto 3.06 | v1 erro 0.76 cob 1.00 brier 0.017 | v2 erro 0.81 cob 0.91 brier 0.007 (n=132)
+   10%  bruto 2.50 | v1 erro 0.35 cob 1.00 brier 0.012 | v2 erro 0.33 cob 0.89 brier 0.003 (n=150)
+   20%  bruto 2.00 | v1 erro 0.29 cob 0.99 brier 0.009 | v2 erro 0.27 cob 0.89 brier 0.002 (n=150)
+   30%  bruto 1.67 | v1 erro 0.21 cob 0.99 brier 0.007 | v2 erro 0.18 cob 0.90 brier 0.001 (n=150)
+   50%  bruto 1.13 | v1 erro 0.14 cob 0.99 brier 0.002 | v2 erro 0.12 cob 0.89 brier 0.000 (n=150)
+   70%  bruto 0.67 | v1 erro 0.09 cob 0.98 brier 0.001 | v2 erro 0.08 cob 0.91 brier 0.000 (n=150)
+   90%  bruto 0.25 | v1 erro 0.03 cob 0.97 brier 0.000 | v2 erro 0.03 cob 0.84 brier 0.000 (n=150)
+
+== apertadas_ate_3pts (4 eleições) cravadas v1 {'n': 12, 'cravou': 12, 'mediana_cp': 60.0, 'erradas': 0} v2 {'n': 12, 'cravou': 12, 'mediana_cp': 15.0, 'erradas': 0}
+  0.5%  bruto 4.12 | v1 erro 1.53 cob 1.00 brier 0.038 | v2 erro 1.15 cob 1.00 brier 0.036 (n=8)
+    1%  bruto 3.57 | v1 erro 2.56 cob 1.00 brier 0.040 | v2 erro 2.45 cob 0.92 brier 0.027 (n=12)
+    2%  bruto 3.01 | v1 erro 0.85 cob 1.00 brier 0.106 | v2 erro 0.93 cob 1.00 brier 0.063 (n=12)
+    3%  bruto 3.07 | v1 erro 1.57 cob 1.00 brier 0.066 | v2 erro 1.76 cob 0.92 brier 0.020 (n=12)
+    5%  bruto 2.45 | v1 erro 1.02 cob 1.00 brier 0.069 | v2 erro 1.24 cob 0.92 brier 0.017 (n=12)
+   10%  bruto 1.72 | v1 erro 0.34 cob 1.00 brier 0.098 | v2 erro 0.29 cob 1.00 brier 0.039 (n=12)
+   20%  bruto 1.51 | v1 erro 0.34 cob 1.00 brier 0.082 | v2 erro 0.31 cob 1.00 brier 0.025 (n=12)
+   30%  bruto 1.25 | v1 erro 0.20 cob 1.00 brier 0.065 | v2 erro 0.19 cob 0.92 brier 0.007 (n=12)
+   50%  bruto 1.06 | v1 erro 0.12 cob 1.00 brier 0.029 | v2 erro 0.13 cob 0.83 brier 0.000 (n=12)
+   70%  bruto 0.73 | v1 erro 0.05 cob 1.00 brier 0.009 | v2 erro 0.06 cob 1.00 brier 0.000 (n=12)
+   90%  bruto 0.37 | v1 erro 0.01 cob 1.00 brier 0.000 | v2 erro 0.01 cob 1.00 brier 0.000 (n=12)

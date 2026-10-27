@@ -1,0 +1,52 @@
+name: Apuração ao vivo
+# Desligado por padrão: só roda quando alguém clica em "Run workflow" (aba Actions).
+# Cada execução dura até ~5h45; se a apuração continuar, o próprio robô liga a próxima.
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "Arquivo de configuração (pasta eleicoes/)"
+        default: "eleicoes/presidente-2026.json"
+        required: true
+      ate:
+        description: "Hora de parar, horário de Brasília (vazio = campo 'fim' da configuração)"
+        default: ""
+        required: false
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: ao-vivo
+  cancel-in-progress: false
+jobs:
+  apuracao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install numpy scipy requests
+      - name: Loop da apuração
+        run: |
+          git config user.name "projecao-bot"
+          git config user.email "projecao-bot@users.noreply.github.com"
+          ARGS="--config ${{ inputs.config }} --publicar --max-min 345"
+          if [ -n "${{ inputs.ate }}" ]; then ARGS="$ARGS --ate ${{ inputs.ate }}"; fi
+          python -u scripts/ao_vivo.py $ARGS
+      - name: Guardar as fotos de cada ciclo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshots-${{ github.run_id }}
+          path: saida/
+          retention-days: 90
+      - name: Renovar (liga uma execução nova se a apuração continua)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f saida/renovar ]; then
+            gh workflow run ao-vivo.yml --ref main -R "${{ github.repository }}" \
+              -f config="${{ inputs.config }}" -f ate="${{ inputs.ate }}"
+          fi
